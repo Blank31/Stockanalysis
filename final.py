@@ -1,4 +1,4 @@
-# %%
+
 from statsmodels.tsa.seasonal import seasonal_decompose
 import pandas as pd
 import numpy as np
@@ -28,7 +28,7 @@ warnings.warn = warn
 
 BS = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
 app = dash.Dash(external_stylesheets=[dbc.themes.CYBORG])
-
+server = app.server
 
 ### -------------------------------------------------------- ###
 ### -----------------EXTRA STUFF - LUKE -------------------- ###
@@ -382,14 +382,14 @@ def update_graph_3(dropdown_selection3, slider_selection3, radio_selection3):
         html_matplot = plotly.tools.mpl_to_plotly(fig)
         return html_matplot
 
-        server=app.server
+
 
 if __name__ == '__main__':
     app.run(debug=True, jupyter_mode='tab')
 
 
 
-# %%
+
 
 
 
