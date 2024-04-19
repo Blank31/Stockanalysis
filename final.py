@@ -382,7 +382,7 @@ def update_graph_3(dropdown_selection3, slider_selection3, radio_selection3):
         html_matplot = plotly.tools.mpl_to_plotly(fig)
         return html_matplot
 
-        app = app.server
+        server=app.server
 
 if __name__ == '__main__':
     app.run(debug=True, jupyter_mode='tab')
