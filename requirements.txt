@@ -1,7 +1,7 @@
 dash==2.0.0
 dash-bootstrap-component
 dash-mantine-components
-matplotlib==3.5.1
+matplotlib
 numpy
 pandas
 plotly
